@@ -1,0 +1,118 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserMaster.master.cs" Inherits="EmployeeLeaveManagementSystem.User.UserMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>User Master</title>
+    <link href="Style.css" type="text/css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 99%;
+            height: 720px;
+        }
+        .auto-style3 {
+            height: 244px;
+        }
+        .auto-style5 {
+            height: 133px;
+            width:150px;
+            }
+        .auto-style6 {
+            width: 1193px;
+            height: 133px;
+        }
+        .auto-style7 {
+            height: 500px;
+            }
+        .auto-style8 {
+            width: 1193px;
+            height: 468px;
+        }
+        .auto-style9 {
+            height: 63px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+             <table class="auto-style1">
+                <tr>
+                    <td class="auto-style5" style="background-color:white" >
+                        <img src="../photos/IIUCL.png" height="150px" width="300px" />
+                    </td>
+                    <td align="center" class="auto-style6" style="background-color:antiquewhite; color: #FFFFFF; font-size: x-large; font-weight: bold">
+                        <h1  style="font-weight: bold; font-size: xx-large; color: black">Leave Management System<br />By Taosif & Samiul</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style9" colspan="2" style="background-color: #C0C0C0" align="center">
+                     &nbsp&nbsp &nbsp&nbsp&nbsp  <asp:Menu ID="Menu1" runat="server" Height="30px" Orientation="Horizontal" RenderingMode="List" Width="1100px" BackColor="#E3EAEB" DynamicHorizontalOffset="2" Font-Bold="True" Font-Names="Arial Black" Font-Size="Large" Font-Strikeout="False" ForeColor="Black" StaticSubMenuIndent="10px">
+                            <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
+                            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                            <DynamicMenuStyle BackColor="#E3EAEB" />
+                            <DynamicSelectedStyle BackColor="#1C5E55" />
+                            <Items>
+                                <asp:MenuItem NavigateUrl="~/User/Home.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/User/About.aspx" Text="About" Value="Abou"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/User/Gallery.aspx" Text="Gallery" Value="New Item"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/User/Contact.aspx" Text="Contact" Value="Contact"></asp:MenuItem>
+                               <%-- <asp:MenuItem NavigateUrl="~/User/Notice.aspx" Text="Notice" Value="Notice"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/User/Employee.aspx" Text="Employee" Value="Employee"></asp:MenuItem>--%>
+                                <asp:MenuItem NavigateUrl="~/User/Registration.aspx" Text="Sign Up" Value="Sign Up"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/User/Login.aspx" Text="Sign In" Value="Sign In"></asp:MenuItem>
+                            </Items>
+                            <StaticHoverStyle BackColor="#666666" ForeColor="White" />
+                            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                            <StaticSelectedStyle BackColor="#1C5E55" />
+
+                        </asp:Menu>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style7"><img src="../photos/gg1.jpg" height="500px" width="350px"/></td>
+                    <td class="auto-style8">
+                        <div>
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                         </div>
+                    </td>
+                </tr>
+                <tr>
+                    
+                    <td class="auto-style3" colspan="2" style="background-color:aquamarine; font-size: x-large; font-weight: bold; color:black;">
+                        <div class="footerleft">
+                            <h2>Useful Link</h2>
+                            <p>Home</p>
+                            <p>About</p>
+                            <p>Gallery</p>
+                            <p>Contact</p>
+                            <p>Employee</p>
+
+                           <div class="footerright">
+                            <h2>Contact Us</h2>
+                            <p>phone :+880 1655 345647</p>
+                            <p>Email : iiuc_cse@gmail.com</p>
+                            <p>Leave Services</p>
+                            <p>Chattogram </p>
+                            <p>Bangladesh</p>
+                        </div>
+                        </div>
+                       
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="background-color: #C0C0C0; font-weight: bold; font-size: medium">&nbsp;
+                        <h2>2023 All Right Reserved , Leave Management System : Taosif Mubtasim | Samiul Azam Shuvo </h2>
+                    </td>
+                </tr>
+            </table>
+
+            
+
+        </div>
+    </form>
+</body>
+</html>
